@@ -7,7 +7,8 @@ int main(void) {
 
     scanf("%d", &x);
 
-    result = 1.0 / (x + 100);
+    /* 100.0 と足すことで double 型として計算させ、オーバーフローを防ぐ */
+    result = 1.0 / (x + 100.0);
 
     printf("%.15f\n", result);
 
